@@ -30,12 +30,11 @@ a:hover{color:#f0b962}
 
 .topbar{
   position:sticky;top:0;z-index:10;
-  display:flex;justify-content:space-between;align-items:center;
+  display:flex;justify-content:flex-end;align-items:center;
   padding:1.25rem 2rem;
   background:rgba(11,13,18,.85);backdrop-filter:blur(6px);
   border-bottom:1px solid var(--wire);
 }
-.mark{font-family:var(--font-mono);font-weight:600;letter-spacing:.05em;text-decoration:none;color:var(--paper)}
 .topbar nav{display:flex;gap:1.5rem;font-family:var(--font-mono);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase}
 .topbar nav a{color:var(--paper);text-decoration:none}
 .topbar nav a:hover{color:var(--signal)}
