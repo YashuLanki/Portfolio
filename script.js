@@ -1,22 +1,22 @@
 const PROJECTS = [
   {
     title: "Vaulter AI — Property Intelligence System",
-    tags: ["Python", "MCP", "Claude API", "RAG"],
-    description: "A local-first AI system for a real-estate investment firm: RAG-backed search over the firm's deal documents and a 4-phase listing screener, each teammate running their own instance through their own Claude Desktop so no one's files or inbox ever leave their machine.",
+    tags: ["Python", "MCP", "Claude Desktop", "SQLite"],
+    description: "The firm's day-to-day intelligence system: instant search across ~493,000 shared deal documents, a built-in CoStar listing screener ranked against the existing portfolio, and a proximity tool for comparing candidates to current holdings — combining the ideas behind the two projects below into one system, exposed as MCP tools each teammate uses directly through their own Claude Desktop.",
     github: "https://github.com/YashuLanki/Vaulter_AI",
     live: null
   },
   {
     title: "CoStar Listing Screener",
     tags: ["Python", "Claude API", "Google Maps"],
-    description: "A 4-phase pipeline that narrows a raw CoStar land export down to a handful of fully vetted acquisition candidates: hard-rule elimination, composite ranking, Claude-written qualitative analysis, and Google Maps ground-truth verification.",
+    description: "A more elaborate, standalone version of Vaulter AI's screening idea: a 4-phase pipeline — hard-rule filtering, composite ranking, Claude-written qualitative analysis, and Google Maps ground-truth verification — that narrows 216 raw listings down to 5 fully-vetted acquisition candidates.",
     github: "https://github.com/YashuLanki/Costar_screener",
     live: null
   },
   {
     title: "Proximity Mapper",
     tags: ["Python", "Google Places API", "GeoJSON"],
-    description: "Given a property, automatically finds nearby employers and anchor businesses, computes distance and direction from the site, and exports ready-to-use GeoJSON and CSV for due-diligence reports.",
+    description: "The standalone version of the proximity tool built into Vaulter AI: given a property, it finds nearby employers and businesses across 17 categories, computes distance and direction from the site, and exports ready-to-use GeoJSON (for Felt) and CSV (for due-diligence reports).",
     github: "https://github.com/YashuLanki/Proximity-Intel",
     live: null
   },
@@ -37,13 +37,13 @@ const PROJECTS = [
   {
     title: "Airline Fare Prediction",
     tags: ["Python", "scikit-learn", "Regression"],
-    description: "A machine-learning project predicting airline ticket prices from route, airline, and schedule features, comparing decision-tree and random-forest regressors and evaluating on MAE, MSE, and R².",
+    description: "A machine-learning project predicting airline ticket prices from route, airline, and schedule features, comparing decision-tree and random-forest regressors (best model: R² 0.81) and evaluating on MAE, MSE, and R².",
     github: "https://github.com/YashuLanki/AirlineRoutesAndPricing",
     live: null
   }
 ];
 
-const STACK = ["Python", "JavaScript", "Claude API / MCP", "ChromaDB", "scikit-learn", "Google Maps & Places API", "Express", "HTML/CSS"];
+const STACK = ["Python", "JavaScript", "Claude API / MCP", "SQLite", "scikit-learn", "Google Maps & Places API", "Express", "HTML/CSS"];
 
 function renderProjects(){
   const grid = document.getElementById("project-grid");
