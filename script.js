@@ -35,15 +35,15 @@ const PROJECTS = [
     live: null
   },
   {
-    title: "Airline Fare Prediction",
-    tags: ["Python", "scikit-learn", "Regression"],
-    description: "A machine-learning pipeline predicting airline ticket prices from route, airline, and schedule features — split into ingestion, transformation, and training components with one shared feature-engineering module so training and inference can't drift apart. Random Forest scores R² 0.89 on held-out data.",
+    title: "Honolulu → Majuro Fare Predictor",
+    tags: ["Python", "Streamlit", "Linear Regression"],
+    description: "A personal project: I'm Marshallese, born and raised in Hawaii, and United is the only airline flying home to Majuro, so fares swing wildly with no competition to check them. I hand-collected 38 real fare quotes and fit a small, honestly-sized Linear Regression — not a bigger model that would just memorize noise — to predict round-trip cost by date, wrapped in a Streamlit app and CLI tool that share one prediction path.",
     github: "https://github.com/YashuLanki/AirlineRoutesAndPricing",
     live: null
   }
 ];
 
-const STACK = ["Python", "JavaScript", "Claude API / MCP", "SQLite", "scikit-learn", "Google Maps & Places API", "Express", "HTML/CSS"];
+const STACK = ["Python", "JavaScript", "Claude API / MCP", "SQLite", "scikit-learn", "Streamlit", "Google Maps & Places API", "Express", "HTML/CSS"];
 
 function renderProjects(){
   const grid = document.getElementById("project-grid");
