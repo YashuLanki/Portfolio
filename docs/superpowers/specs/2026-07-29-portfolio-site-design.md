@@ -39,11 +39,14 @@ invented.
 
 ## Visual design
 
-**Thesis:** the signature artifact of this candidate's work is a *funnel* —
-turning a large volume of raw/noisy input into a small number of verified,
-trustworthy outputs (most literally in Costar_screener: "216 raw listings → 9
-verified acquisitions"). The hero is built around this real number, not a
-generic stat-plus-label template.
+**Thesis (revised after user review):** the initial direction built the hero
+around an animated "216 raw listings → 9 verified acquisitions" pipeline bar.
+User feedback: it read as confusing rather than impressive, and the
+supporting paragraph felt "cheesy." Both were replaced with plain, direct
+copy — a straightforward headline and a first-person paragraph explaining
+what the site is and what's in it, no visual metaphor. The real 216→9 number
+still lives inside the CoStar Listing Screener project card, where it's
+concrete rather than abstract.
 
 **Palette** (dark, engineering-console feel):
 | Token | Hex | Use |

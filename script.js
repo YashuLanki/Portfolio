@@ -65,20 +65,6 @@ function renderStack(){
   list.innerHTML = STACK.map(s => `<li>${s}</li>`).join("");
 }
 
-function initPipeline(){
-  const pipeline = document.querySelector(".pipeline");
-  if(!pipeline) return;
-  const obs = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        pipeline.classList.add("is-visible");
-        obs.disconnect();
-      }
-    });
-  }, { threshold: 0.4 });
-  obs.observe(pipeline);
-}
-
 function initReveal(){
   const targets = document.querySelectorAll(".reveal");
   const obs = new IntersectionObserver((entries) => {
@@ -95,6 +81,5 @@ function initReveal(){
 document.addEventListener("DOMContentLoaded", () => {
   renderProjects();
   renderStack();
-  initPipeline();
   initReveal();
 });

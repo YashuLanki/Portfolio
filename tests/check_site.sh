@@ -31,7 +31,6 @@ check 'function renderProjects' script.js
 check 'function renderStack' script.js
 
 # Task 3: animation
-check 'function initPipeline' script.js
 check 'function initReveal' script.js
 check 'IntersectionObserver' script.js
 
