@@ -37,7 +37,7 @@ const PROJECTS = [
   {
     title: "Airline Fare Prediction",
     tags: ["Python", "scikit-learn", "Regression"],
-    description: "A machine-learning project predicting airline ticket prices from route, airline, and schedule features, comparing decision-tree and random-forest regressors (best model: R² 0.81) and evaluating on MAE, MSE, and R².",
+    description: "A machine-learning pipeline predicting airline ticket prices from route, airline, and schedule features — split into ingestion, transformation, and training components with one shared feature-engineering module so training and inference can't drift apart. Random Forest scores R² 0.89 on held-out data.",
     github: "https://github.com/YashuLanki/AirlineRoutesAndPricing",
     live: null
   }
