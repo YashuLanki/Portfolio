@@ -42,7 +42,7 @@ a:hover{color:#f0b962}
 
 .hero{max-width:860px;margin:0 auto;padding:6rem 2rem 4rem;text-align:left}
 .eyebrow{font-family:var(--font-mono);letter-spacing:.15em;color:var(--data);font-size:.8rem;margin:0 0 1rem}
-.hero h1{font-size:clamp(2.2rem,5vw,3.4rem);max-width:14ch}
+.hero h1{font-size:clamp(2rem,4.2vw,3rem)}
 .lede{max-width:56ch;color:#C6C9D0;font-size:1.05rem}
 
 .hero-links{display:flex;flex-wrap:wrap;gap:.75rem 1.5rem;margin-top:2.5rem;font-family:var(--font-mono);font-size:.85rem}
