@@ -44,6 +44,15 @@ a:hover{color:#f0b962}
 .hero h1{font-size:clamp(2rem,4.2vw,3rem)}
 .lede{max-width:56ch;color:#C6C9D0;font-size:1.05rem}
 
+.current-role{
+  display:flex;align-items:center;gap:.5rem;
+  margin:1.25rem 0 0;font-family:var(--font-mono);font-size:.85rem;color:var(--paper);
+}
+.current-dot{
+  width:8px;height:8px;border-radius:50%;background:var(--data);
+  box-shadow:0 0 0 3px rgba(111,214,196,.18);flex:none;
+}
+
 .hero-links{display:flex;flex-wrap:wrap;gap:.75rem 1.5rem;margin-top:2.5rem;font-family:var(--font-mono);font-size:.85rem}
 .hero-links a{text-decoration:none}
 
