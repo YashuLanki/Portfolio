@@ -2,7 +2,7 @@ const PROJECTS = [
   {
     title: "Vaulter AI — Property Intelligence System",
     tags: ["Python", "MCP", "Claude Desktop", "SQLite"],
-    description: "The firm's day-to-day intelligence system: instant search across ~493,000 shared deal documents, a built-in CoStar listing screener ranked against the existing portfolio, and a proximity tool for comparing candidates to current holdings — combining the ideas behind the two projects below into one system, exposed as MCP tools each teammate uses directly through their own Claude Desktop.",
+    description: "The firm's day-to-day intelligence system: instant search across the shared deal document library, a built-in CoStar listing screener ranked against the existing portfolio, and a proximity tool for comparing candidates to current holdings — combining the ideas behind the two projects below into one system, exposed as MCP tools each teammate uses directly through their own Claude Desktop.",
     github: "https://github.com/YashuLanki/Vaulter_AI",
     live: null
   },
