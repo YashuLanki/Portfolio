@@ -40,6 +40,13 @@ const PROJECTS = [
     description: "A personal project: I'm Marshallese, born and raised in Hawaii, and United is the only airline flying home to Majuro, so fares swing wildly with no competition to check them. I hand-collected 38 real fare quotes and fit a small, honestly-sized Linear Regression — not a bigger model that would just memorize noise — to predict round-trip cost by date, wrapped in a Streamlit app and CLI tool that share one prediction path.",
     github: "https://github.com/YashuLanki/AirlineRoutesAndPricing",
     live: null
+  },
+  {
+    title: "Tailor",
+    tags: ["JavaScript", "pdf.js", "Client-side parsing"],
+    description: "A resume tool that never writes anything: drop in your existing resumes, cover letters, and transcripts, paste a job posting link, and it scores every bullet against the actual requirement text instead of rewriting it for you. Docs are parsed and everything runs client-side — no server, no account, nothing leaves your machine.",
+    github: "https://github.com/YashuLanki/tailor",
+    live: null
   }
 ];
 
