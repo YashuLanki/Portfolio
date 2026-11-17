@@ -24,3 +24,6 @@ python3 -m http.server 8000
 ## Update the project list
 
 Edit the `PROJECTS` array in `script.js` — no other file needs to change.
+
+After changing `script.js` or `style.css`, bump the `?v=N` number on its tag in
+`index.html` so visitors' browsers fetch the new file instead of a cached copy.
