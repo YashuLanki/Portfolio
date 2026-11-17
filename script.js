@@ -1,37 +1,48 @@
 const PROJECTS = [
   {
+    title: "M.S. in Artificial Intelligence — Coursework",
+    tags: ["Python", "NumPy", "PyMC", "scikit-learn"],
+    bullets: [
+      "Weekly projects from my Master of Science in AI at Grand Canyon University, each built in Python on real-world datasets",
+      "<strong>Mathematics for AI (AIT 525):</strong> regression, SVD &amp; PCA, NLP document similarity, graph-based influence prediction, fuzzy logic, PDEs, and a Naive Bayes spam classifier",
+      "<strong>Statistics &amp; Data Analysis for AI (AIT 530):</strong> probability distributions, confidence intervals, and Bayesian inference"
+    ],
+    github: "https://github.com/YashuLanki/Masters-of-Science-in-AI",
+    live: null
+  },
+  {
     title: "Vaulter AI — Property Intelligence System",
     tags: ["Python", "MCP", "Claude Desktop", "SQLite"],
-    description: "The firm's day-to-day intelligence system: instant search across the shared deal document library, a built-in CoStar listing screener ranked against the existing portfolio, and a proximity tool for comparing candidates to current holdings — exposed as MCP tools each teammate uses directly through their own Claude Desktop.",
+    bullets: [
+      "The day-to-day intelligence system for a real estate investment firm",
+      "Instant search across the shared deal document library",
+      "Built-in CoStar listing screener that ranks candidates against the existing portfolio",
+      "Proximity tool for comparing candidates to current holdings",
+      "Exposed as MCP tools each teammate uses directly through their own Claude Desktop"
+    ],
     github: "https://github.com/YashuLanki/Vaulter_AI",
     live: null
   },
   {
-    title: "Bilingual Resume Builder",
-    tags: ["JavaScript", "Express", "Client-side PDF"],
-    description: "A free, bilingual (English/Marshallese) resume builder for the Arizona Marshallese Community: a guided form, ChatGPT-assisted writing help, and a one-click, one-page PDF export, entirely in the browser.",
-    github: "https://github.com/YashuLanki/Resume/tree/main/ChatGPT_Resume_Marshallese_Assistance",
-    live: null
-  },
-  {
-    title: "Claude Resume Kit",
-    tags: ["Claude Code", "Skills", "DOCX/PDF"],
-    description: "My working copy of the open-source claude-resume-kit, adapted for my own job search: a Claude Code skill kit that builds a knowledge base from your papers, code, and past resumes once, then tailors a resume, CV, or cover letter to each job posting from that verified material instead of rewriting a pasted resume. Provenance flags and verb-discipline rules block overclaiming, and it builds .docx and .pdf output locally.",
-    github: "https://github.com/YashuLanki/Resume/tree/main/Claude_Resume_kit",
+    title: "Resume Tools",
+    tags: ["JavaScript", "Claude Code", "Client-side PDF"],
+    bullets: [
+      "<strong>Bilingual Resume Builder:</strong> a free English/Marshallese resume builder for the Arizona Marshallese Community, with a guided form, ChatGPT-assisted writing help, and a one-click, one-page PDF export, all in the browser",
+      "<strong>Claude Resume Kit:</strong> my adapted copy of the open-source claude-resume-kit, a Claude Code skill kit that tailors resumes, CVs, and cover letters to each job posting from a verified knowledge base, with provenance flags and verb-discipline rules that block overclaiming"
+    ],
+    github: "https://github.com/YashuLanki/Resume",
     live: null
   },
   {
     title: "Honolulu → Majuro Fare Predictor",
     tags: ["Python", "Streamlit", "Linear Regression"],
-    description: "A personal project: I'm Marshallese, born and raised in Hawaii, and United is the only airline flying home to Majuro, so fares swing wildly with no competition to check them. I hand-collected 38 real fare quotes and fit a small, honestly-sized Linear Regression — not a bigger model that would just memorize noise — to predict round-trip cost by date, wrapped in a Streamlit app and CLI tool that share one prediction path.",
+    bullets: [
+      "A personal project: I'm Marshallese, born and raised in Hawaii, and United is the only airline flying home to Majuro, so fares swing wildly with no competition to check them",
+      "Hand-collected 38 real fare quotes",
+      "Fit a small, honestly-sized Linear Regression (not a bigger model that would just memorize noise) to predict round-trip cost by date",
+      "Wrapped in a Streamlit app and a CLI tool that share one prediction path"
+    ],
     github: "https://github.com/YashuLanki/Honolulu_Majuro_UnitedAirline",
-    live: null
-  },
-  {
-    title: "M.S. in Artificial Intelligence — Coursework",
-    tags: ["Python", "NumPy", "PyMC", "scikit-learn"],
-    description: "Weekly projects from my Master of Science in AI at Grand Canyon University. Mathematics for AI (AIT 525) covers regression, SVD and PCA, NLP document similarity, graph-based influence prediction, fuzzy logic, PDEs, and a Naive Bayes spam classifier. Statistics & Data Analysis for AI (AIT 530) covers probability distributions, confidence intervals, and Bayesian inference, all on real UCI datasets.",
-    github: "https://github.com/YashuLanki/Masters-of-Science-in-AI",
     live: null
   }
 ];
@@ -44,7 +55,7 @@ function renderProjects(){
     <article class="project-card reveal">
       <p class="project-tags">${p.tags.join(" · ")}</p>
       <h3>${p.title}</h3>
-      <p>${p.description}</p>
+      <ul class="project-bullets">${p.bullets.map(b => `<li>${b}</li>`).join("")}</ul>
       <div class="project-links">
         <a href="${p.github}" target="_blank" rel="noopener">GitHub ↗</a>
         ${p.live ? `<a href="${p.live}" target="_blank" rel="noopener">Live ↗</a>` : ""}

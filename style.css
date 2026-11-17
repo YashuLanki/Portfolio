@@ -76,6 +76,9 @@ section h2{font-size:1.6rem;margin-bottom:2rem}
 .project-tags{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.06em;color:var(--data);text-transform:uppercase;margin:0}
 .project-card h3{font-family:var(--font-display);font-size:1.15rem;margin:0}
 .project-card p{margin:0;color:#C6C9D0;font-size:.92rem}
+.project-bullets{margin:0;padding-left:1.1rem;color:#C6C9D0;font-size:.92rem;display:grid;gap:.4rem}
+.project-bullets li::marker{color:var(--signal)}
+.project-bullets strong{color:var(--paper);font-weight:600}
 .project-links{display:flex;gap:1rem;margin-top:auto;padding-top:.75rem;border-top:1px solid var(--wire);font-family:var(--font-mono);font-size:.8rem}
 .project-links a{text-decoration:none}
 
