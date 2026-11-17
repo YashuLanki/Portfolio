@@ -26,7 +26,7 @@ check '--signal:#D9A441' style.css
 check '--font-mono' style.css
 
 # Task 2: project data
-check_count 'github: "https://github.com/YashuLanki/' script.js 6
+check_count 'github: "https://github.com/YashuLanki/' script.js 5
 check 'function renderProjects' script.js
 check 'function renderStack' script.js
 

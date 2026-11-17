@@ -2,55 +2,41 @@ const PROJECTS = [
   {
     title: "Vaulter AI — Property Intelligence System",
     tags: ["Python", "MCP", "Claude Desktop", "SQLite"],
-    description: "The firm's day-to-day intelligence system: instant search across the shared deal document library, a built-in CoStar listing screener ranked against the existing portfolio, and a proximity tool for comparing candidates to current holdings — combining the ideas behind the two projects below into one system, exposed as MCP tools each teammate uses directly through their own Claude Desktop.",
+    description: "The firm's day-to-day intelligence system: instant search across the shared deal document library, a built-in CoStar listing screener ranked against the existing portfolio, and a proximity tool for comparing candidates to current holdings — exposed as MCP tools each teammate uses directly through their own Claude Desktop.",
     github: "https://github.com/YashuLanki/Vaulter_AI",
     live: null
   },
   {
-    title: "CoStar Listing Screener",
-    tags: ["Python", "Claude API", "Google Maps"],
-    description: "A more elaborate, standalone version of Vaulter AI's screening idea: a 4-phase pipeline — hard-rule filtering, composite ranking, Claude-written qualitative analysis, and Google Maps ground-truth verification — that narrows 216 raw listings down to 5 fully-vetted acquisition candidates.",
-    github: "https://github.com/YashuLanki/Costar_screener",
-    live: null
-  },
-  {
-    title: "Proximity Mapper",
-    tags: ["Python", "Google Places API", "GeoJSON"],
-    description: "The standalone version of the proximity tool built into Vaulter AI: given a property, it finds nearby employers and businesses across 17 categories, computes distance and direction from the site, and exports ready-to-use GeoJSON (for Felt) and CSV (for due-diligence reports).",
-    github: "https://github.com/YashuLanki/Proximity-Intel",
-    live: null
-  },
-  {
-    title: "Arizona Marshallese Community Website",
-    tags: ["HTML", "CSS", "JavaScript"],
-    description: "The official site for a 501(c)(3) nonprofit serving Marshallese families across Arizona — a single hand-built page covering leadership, news, scholarships, and community events, with zero build tooling.",
-    github: "https://github.com/YashuLanki/community_site",
-    live: "https://azmarshallese.github.io/community_site/"
-  },
-  {
     title: "Bilingual Resume Builder",
     tags: ["JavaScript", "Express", "Client-side PDF"],
-    description: "A free, bilingual (English/Marshallese) resume builder: a guided form, optional AI-assisted writing help, and a one-click, one-page PDF export, entirely in the browser.",
-    github: "https://github.com/YashuLanki/resume_builder",
+    description: "A free, bilingual (English/Marshallese) resume builder for the Arizona Marshallese Community: a guided form, ChatGPT-assisted writing help, and a one-click, one-page PDF export, entirely in the browser.",
+    github: "https://github.com/YashuLanki/Resume/tree/main/ChatGPT_Resume_Marshallese_Assistance",
+    live: null
+  },
+  {
+    title: "Claude Resume Kit",
+    tags: ["Claude Code", "Skills", "DOCX/PDF"],
+    description: "My working copy of the open-source claude-resume-kit, adapted for my own job search: a Claude Code skill kit that builds a knowledge base from your papers, code, and past resumes once, then tailors a resume, CV, or cover letter to each job posting from that verified material instead of rewriting a pasted resume. Provenance flags and verb-discipline rules block overclaiming, and it builds .docx and .pdf output locally.",
+    github: "https://github.com/YashuLanki/Resume/tree/main/Claude_Resume_kit",
     live: null
   },
   {
     title: "Honolulu → Majuro Fare Predictor",
     tags: ["Python", "Streamlit", "Linear Regression"],
     description: "A personal project: I'm Marshallese, born and raised in Hawaii, and United is the only airline flying home to Majuro, so fares swing wildly with no competition to check them. I hand-collected 38 real fare quotes and fit a small, honestly-sized Linear Regression — not a bigger model that would just memorize noise — to predict round-trip cost by date, wrapped in a Streamlit app and CLI tool that share one prediction path.",
-    github: "https://github.com/YashuLanki/AirlineRoutesAndPricing",
+    github: "https://github.com/YashuLanki/Honolulu_Majuro_UnitedAirline",
     live: null
   },
   {
-    title: "Tailor",
-    tags: ["JavaScript", "pdf.js", "Client-side parsing"],
-    description: "A resume tool that never writes anything: drop in your existing resumes, cover letters, and transcripts, paste a job posting link, and it scores every bullet against the actual requirement text instead of rewriting it for you. Docs are parsed and everything runs client-side — no server, no account, nothing leaves your machine.",
-    github: "https://github.com/YashuLanki/tailor",
+    title: "M.S. in Artificial Intelligence — Coursework",
+    tags: ["Python", "NumPy", "PyMC", "scikit-learn"],
+    description: "Weekly projects from my Master of Science in AI at Grand Canyon University. Mathematics for AI (AIT 525) covers regression, SVD and PCA, NLP document similarity, graph-based influence prediction, fuzzy logic, PDEs, and a Naive Bayes spam classifier. Statistics & Data Analysis for AI (AIT 530) covers probability distributions, confidence intervals, and Bayesian inference, all on real UCI datasets.",
+    github: "https://github.com/YashuLanki/Masters-of-Science-in-AI",
     live: null
   }
 ];
 
-const STACK = ["Python", "JavaScript", "Claude API / MCP", "SQLite", "scikit-learn", "Streamlit", "Google Maps & Places API", "Express", "HTML/CSS"];
+const STACK = ["Python", "JavaScript", "Claude API / MCP", "SQLite", "scikit-learn", "NumPy & pandas", "PyMC", "Streamlit", "Google Maps & Places API", "Express", "HTML/CSS"];
 
 function renderProjects(){
   const grid = document.getElementById("project-grid");
